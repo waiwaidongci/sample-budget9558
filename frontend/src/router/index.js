@@ -4,4 +4,7 @@ import * as analysis from '../pages/analysis.js';
 import * as results from '../pages/results.js';
 import * as review from '../pages/review.js';
 import * as audit from '../pages/audit.js';
-export const pages={overview,data,analysis,results,review,audit};
+import * as channels from '../pages/channels.js';
+import * as release from '../pages/release.js';
+import * as partner from '../pages/partner.js';
+export const pages={overview,data,analysis,results,review,audit,channels,release,partner};

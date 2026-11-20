@@ -60,12 +60,20 @@
   "roles": [
     "admin",
     "analyst",
-    "viewer"
+    "viewer",
+    "partner"
   ],
   "states": [
     "queued",
     "running",
     "completed",
     "failed"
-  ]
+  ],
+  "privacy": {
+    "default_budget": 4.0,
+    "default_release_epsilon": 1.0,
+    "contribution_cap": 1,
+    "mechanism": "laplace_per_cell_pure_dp",
+    "note": "每位受众跨组跨渠道的总贡献上限为1；每个（渠道×组别×触达/点击）计数查询独立加入Laplace噪声，单次发布ε平均分配到4×渠道数个子查询；总计由各渠道带噪计数相加得到，保证分渠道相加等于总计。"
+  }
 }
